@@ -1,0 +1,61 @@
+// Add All Elements of an given Array using Java style for loop 
+
+function add_all(data)
+{ var total = 0;
+    for(var a = 0; a < data.length; a++){
+        total = total + data[a];
+    }
+    return total;
+}
+
+// Same as above but using Lambda style 
+function add_all2(arr) {
+  var sum = 0;
+  arr.forEach(e => sum += e);
+  return sum;
+}
+
+/* Same as above but using standard Javascript style. Below e is the element from the array and passed as an argument to anonymouns function */
+function add_all3(arr) {
+  var sum = 0;
+  arr.forEach(function(e) {sum += e;});
+  return sum;
+}
+
+
+// Calculate Celsius 
+
+function getCelsius(f){
+ var c; 
+ c = ((f - 32) / 9)*5; 
+
+ return c; 
+}
+
+
+// Calculate Fahrenhite 
+
+function getFahrenhite(c)
+{
+ var f; 
+f = ((c *  9) + 160)/5
+
+ return f; 
+}
+
+// Generate Coins from a given amount 
+// Available  coins are 1,2,5,10 and 25
+
+function convert_to_coins(amount) {
+  var denominations = [25, 10, 5, 2, 1];
+  var curr_denom_index = 0;
+  while (amount > 0) 
+  {
+    while (amount < denominations[curr_denom_index]) 
+    {
+      curr_denom_index++;
+    }
+    amount = amount - denominations[curr_denom_index];
+    console.log(denominations[curr_denom_index]);
+  }
+}

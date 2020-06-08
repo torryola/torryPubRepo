@@ -1,0 +1,64 @@
+/*Write a function to find the largest string in an array of strings making use of the reduce function. 
+You can, of course, do it using a loop, but see how short your code can be if you make use of the filter function.
+*/
+// Solution 
+var bigArray = ["Apple", "Boy", "Eleven", "ABCDEFGHIJKLMNOPQ"];
+
+function findLarg(s1, s2){
+    var len1 = s1.length; 
+    var len2 = s2.length; 
+    if(len1 > len2)
+       return s1
+    else
+        return s2;
+}
+
+bigArray.reduce(findLarg);  // "ABCDEFGHIJKLMNOPQ"
+
+/*Write a function that takes an array of numbers and returns the sum of squares of those numbers. 
+E.g. if the array passed is [1, 2, 3] then the function should return 14. 
+*/
+// Solution 
+var num = [1,2,3]; 
+
+function numSqr(n){
+ return n * n; 
+}
+
+function sum(prev, currentIndex){
+ return prev + currentIndex; 
+}
+var sq = num.map(numSqr); // [1, 4, 9]
+
+sq.reduce(sum); // 14
+
+// Method Chaining 
+num.map(numSqr).reduce(sum) // 14
+
+/*Write a function that takes an array of numbers as an argument and filters and returns the even numbers in them. 
+*/
+// Solution 
+var nums = [2,3,4,5,6,7,8,9,10]
+undefined
+function getEvens(n)
+{
+    return n%2 === 0; 
+}
+
+nums.filter(getEvens); //[2, 4, 6, 8, 10]
+
+/*Write a function that takes an array and a criteria function(for filtering) and returns the array of those elements which do not fulfill the criteria. 
+The criteria function should take any element as argument and return a boolean value. 
+*/
+// Solution 
+var nums = [2,3,4,5,6,7,8,9,10]; 
+function gt_8(n)
+{
+    if( n > 8) return n; 
+}
+function getVals(n)
+{
+    if(gt_8(n)) return n; 
+}
+
+nums.filter(getVals); // [9, 10]
