@@ -1,0 +1,50 @@
+/* Write a constructor function to represent a Rectangle, which can calculate its area and perimeter. */
+function Rectangle(length, width)
+{ this.length = length; 
+    this.width = width; 
+ 
+ this.area = function(){
+     
+     return this.length * this.width;
+ }
+ 
+ this.premiter = function(){
+     
+     return 2 * (this.length + this.width);
+ }
+
+}
+
+var rec = new Rectangle(5, 10);
+rec.area(); //50
+rec.premiter(); //30
+
+
+/* Write javascript code so that we can check if a string object is a palindrome. E.g. "xyx".isPalindrome() should return true. */
+
+// Add function to String Object using prototype
+String.prototype.isPalindrome = function()
+{
+    var revStr = this.split("").reverse().join(""); 
+    return this == revStr; 
+    
+} 
+
+function isPalindrome(str)
+{
+    var revStr = str.split("").reverse().join(""); 
+    return str === revStr; 
+}
+
+/*
+Write a Point function which takes x and y coordinates as arguments to define it.
+It should also be able to evaluate the distance from another point. 
+We may make use of this exercise in a later assignment problem when dealing with the Document Object Model. 
+*/
+function Point(x, y) {
+  this.x = x;
+  this.y = y;
+  this.distanceFrom = function(another) {
+    return Math.sqrt((this.x - another.x) * (this.x - another.x) + (this.y - another.y) * (this.y - another.y));
+  }
+}
