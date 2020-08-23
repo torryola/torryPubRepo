@@ -1,0 +1,23 @@
+In this tutorial, we are going to focus on basic CRUD operations in Spring Boot.
+Create : Adding objects to Collection
+Read : Outputting the collection content
+Update : Changing 1 or 2 values in a Collection
+Delete : Removing item from Collection
+
+For this brevity, Map will be used to emulate Database-like functions
+
+Sample Data Format on Postman
+
+{
+    "id":5,
+    "feedTitle":"Spring Boot",
+    "feedContent":"CRUD Ops in Spring Boot",
+    "feedDateTime":"2020-08-23T16:49:52.995"
+}
+
+{
+    "id" : 10,
+    "feedTitle" : "GCP",
+    "feedContent" : "GCP Infrastructure Fundamental Core Services",
+    "feedDateTime" : "2020-08-23T15:04:52.995"
+}
