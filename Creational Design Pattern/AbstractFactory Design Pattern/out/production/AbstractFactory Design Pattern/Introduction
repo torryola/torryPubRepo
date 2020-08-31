@@ -1,0 +1,12 @@
+Abstract Factory Design Pattern is briefly a factory for factories.
+It is useful when you want to create multiple factories and usually in Framework when you have lots of related classes
+that are created via factory patterns
+
+This sample will experiment the implementation of Abstract factory design pattern.
+Example;
+A Factory Pattern for Creating categories of Students e.g. UnderGraduate, PostGraduate etc
+A Factory Pattern for Creating Categories of Courses e.e. PostGrad Courses, UnderGrad Courses, Research Courses etc
+
+An Abstract Factory Pattern(e.g. FactoryProducer) to Create above factories
+
+Let's get started
