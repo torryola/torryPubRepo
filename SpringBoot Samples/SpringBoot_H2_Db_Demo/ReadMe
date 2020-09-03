@@ -1,0 +1,52 @@
+In this tutorial, we are going to focus on Spring Boot and H2 Database.
+Spring Boot gives developers flexibility to quickly run an application using in-memory database h2 to emulate the
+production database connection with the application.
+
+Advantage:
+- it is faster
+- Promotes RAD
+- It is Free.
+- Testing is easy because the developers can easily perform CRUD operations with simple data
+- It is safe in a way, as the developer doesn't need to interact with the live Db;
+Disadvantage:
+- It is in-memory hence is volatile
+
+NOTE ==>>
+1. sa is the default username set by spring boot for H2 in-memory DB, as root is default to MySql
+2. The in-memory can be changed to persist the data in the file e.g. 	jdbc:h2:[file:][<path>]<databaseName>
+for more other modes http://www.h2database.com/html/features.html#connection_modes
+
+Using the previous example with little tweak
+Tasks:
+- Create database in h2
+- Create properties for the database connection
+- Perform CRUD ops on the newly created database
+- Test :  reuse the existing controller to test the changes
+
+****** Run Below command in terminal **************
+mvn clean compile
+mvn spring-boot:run
+
+NOTE ==>> The rest of the previous example will remain same
+
+basic CRUD operations in Spring Boot.
+Create : Adding objects to Collection
+Read : Outputting the collection content
+Update : Changing 1 or 2 values in a Collection
+Delete : Removing item from Collection
+
+For this brevity, Map will be used to emulate Database-like functions
+
+Sample Data Format on Postman
+
+{
+    "userId" : "user4@email.com",
+    "feedTitle" : "Azure",
+    "feedContent" : "Azure Infrastructure Fundamental Core Services"
+}
+
+{
+    "userId" : "user1@email.com",
+    "feedTitle":"Spring Boot",
+    "feedContent":"CRUD Ops in Spring Boot"
+}
