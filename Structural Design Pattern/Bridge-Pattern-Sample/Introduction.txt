@@ -1,0 +1,10 @@
+Bridge Pattern 
+
+
+When to use it: 
+1. When you want to decouple between abstraction and its implementation 
+2. When both the abstractions and their implementation should be extensible 
+3. When client's code should not have to be recomplied due to the changes to the implementation of an abstraction
+4. When you to hide the implementation of an abstraction for clients completely
+
+Note ==>> This pattern can get complicated easily

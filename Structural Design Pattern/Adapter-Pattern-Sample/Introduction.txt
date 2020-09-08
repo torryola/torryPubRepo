@@ -1,0 +1,7 @@
+Apater Pattern 
+
+Is one of the Structural Design Pattern approaches. It helps the developer be able to implement unrelated or seperate classes/objects
+via composition. 
+E.g. 
+1. Plug-Adapter that enables American plugs to work in the British 3-pin sockets 
+2. MediaPlayer that plays different media file formats 
