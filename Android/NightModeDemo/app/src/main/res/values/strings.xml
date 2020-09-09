@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="decrease_counter">decrease counter</string>
+    <string name="increase_counter">increase counter</string>
+    <string name="counter_with_night_view">Counter</string>
+    <string name="counter_initial_value">0</string>
+    <string name="night_mode">Night Mode</string>
+</resources>
