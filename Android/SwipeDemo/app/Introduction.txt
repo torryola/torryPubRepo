@@ -1,0 +1,5 @@
+
+This Demo is about implementing swipe and drag-and-drop.
+This is pretty basic but the techniques can be applied to polish up some functionalities in
+a real app.
+Android Framework has made the swipe and drag-and-drop easier with the ItemTouchHelper class
