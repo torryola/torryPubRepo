@@ -1,0 +1,40 @@
+This tutorial is a step-up from the previous Spring-Boot With H2 Db demo, focusing on Spring Boot with MySql Database.
+
+Summarily, replacing H2 database with MySql database
+
+NOTE ==>> For this to work, you should create Database in in MySql first as Table cannot exists without the Db.
+
+Using the previous example with little tweak
+Tasks:
+- Create database and Table in MySql using the commands in main/resources/createDb.sql and sampleData.sql
+- Create properties for the database connection
+- Perform CRUD ops on the newly created database
+- Test :  reuse the existing controller to test the changes
+
+****** Run Below command in terminal **************
+mvn clean compile
+mvn spring-boot:run
+
+NOTE ==>> The rest of the previous example will remain same
+
+basic CRUD operations in Spring Boot.
+Create : Adding new data to table
+Read : Outputting the records in the table
+************** Exercise **********************
+Update : Changing 1 or 2 records in the table
+Delete : Removing a record from the table
+************ End of Exercise ********************
+
+Sample Data Format if using Postman
+
+{
+    "userId" : "user4@email.com",
+    "feedTitle" : "Azure",
+    "feedContent" : "Azure Infrastructure Fundamental Core Services"
+}
+
+{
+    "userId" : "user1@email.com",
+    "feedTitle":"Spring Boot",
+    "feedContent":"CRUD Ops in Spring Boot"
+}
