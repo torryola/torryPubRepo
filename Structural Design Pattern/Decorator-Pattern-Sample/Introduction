@@ -1,0 +1,18 @@
+
+        Decorator Design Pattern
+
+This pattern allow you to attach additional functionality to objects at dynamically.
+it is a strict principle of open for extension closed for modification
+Decorator provide alternative to sub-classing(i.e Inheritance) for extending functionality
+
+Advantages
+- Functionality can be added to an object dynamically without affecting existing functionalities
+- More flexible than static inheritance
+
+Drawback
+- Lead to too many small classes which is an added complexity
+
+For brevity, decorator is about how you compose objects to create a new functionality
+
+In this demo, we are going to create menu dynamically based
+e.g. BronzeMember will have fewer menu options than SilverMember
