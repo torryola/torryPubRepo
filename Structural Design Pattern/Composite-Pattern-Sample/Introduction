@@ -1,0 +1,22 @@
+
+Composite Design Pattern
+
+This is a brief introduction to Composite Design Pattern.
+Composite has you might have guessed creates has-a type of relationships via composition style to create
+hierarchical structure thus is a proud member of Structural Design Pattern.
+
+In composite pattern you have a :
+1. Component - i.e. the base interface for all the objects in the hierarchy. Here is where you define the common functions.
+It can be Interface or abstract class
+2. Composite - implements the base interface functions and add specific functions for operations on members(i.e. leaf).
+It has other members
+3. Leaf - is the primitive objects in the composite. It implements base interface and does not have other members
+4. Client - has access to the elements via component base interface
+
+Example :
+File Directory: In the file directory, you have:
+1. Interface or Abstract class with operations on members (i.e. Component) :
+    e.g. add_New_File, remove_File, show_FileDetails etc
+2. Folder(s) (i.e. Composite) that contains another folder(sub-folders) and files
+3 .  Files (i.e. leaf)
+4 . Window or File Explorer (i.e. Client)
