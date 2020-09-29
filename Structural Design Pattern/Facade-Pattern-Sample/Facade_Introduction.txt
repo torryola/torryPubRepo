@@ -1,0 +1,19 @@
+        ****************** Facade Design Pattern ******************
+        
+        It proivdes unified interface for a set of interfaces in a system by: 
+        - defining a higher-level interface that makes the subsystem easier to use. 
+        - hidding the complexities of the subsystem interfaces 
+        
+        Example: 
+        
+        JDBC interface in Java can be called a Facade. 
+            - Clients create connections using the "java.sql.Connection" interface with the implementation hidden from clients. 
+        
+        Facade is like a helper for client application. 
+        
+        Advantages: 
+        
+        1. Reduces the number of objects that clients deal with 
+        2. Makes the subsystem easier to use. 
+        3. support lose coupling 
+        4. It decouples the client implementation from the complex subsystem
