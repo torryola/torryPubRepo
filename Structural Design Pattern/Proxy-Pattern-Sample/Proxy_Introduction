@@ -1,0 +1,11 @@
+
+        ************ Proxy Design Pattern *****************
+ Proxy design pattern is like an intermediary between the client and object(s). Call it a Middle-man
+
+
+ Advantages:
+ - It controls access to the resources by the client
+ - It hides the possibly complex implementation from clients
+
+ Disadvantage:
+ - It can lead to too many extra classes being created if not controlled, complex code to manage as a result.
