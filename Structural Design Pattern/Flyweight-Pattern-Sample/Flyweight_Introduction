@@ -1,0 +1,21 @@
+*************** Flyweight Design Pattern **********************
+
+This is pattern focuses on object reusability by reducing the memory usage of Object creation.
+
+Flyweight creates and stores object then return it to the client. If the same object is requested again, last stored 
+object will returned otherwise new one is created, stored and returned. 
+
+Flyweigth Objects are shared and immutable. 
+
+2 Flyweight Object's Properties: 
+- Intrinsic : Properties that can be stored in flyweight object and shareable
+- Extrinsic : Properties that vary per object e.g. Circle object with different colours and width. Colours and Width are extrinsic properties. 
+Basically, any state that needs to be set by the client, should be removed from the shared object.
+
+Example: 
+
+- Java String pool is one of the best example of Flyweight Pattern. Java stores common string objects in the pool, if same objects is requested, rather
+than creating new one, Java will fetch it from the pool or create, store and return it if not readily in the pool.
+
+- Another example will be a game avatar. Avatar can be Male or Female with different properties
+e.g. Male Police Avatar, Female Driver Avatar etc
